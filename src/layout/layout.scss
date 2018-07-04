@@ -1,0 +1,15 @@
+
+
+.headerTop {
+  height: 50px;
+  background:#1890ff;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .avator {
+    cursor: pointer;
+    // background-color: #87d068;
+  }
+}
