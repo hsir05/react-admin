@@ -2,12 +2,14 @@
 
 .headerTop {
   height: 50px;
-  background:#1890ff;
+  line-height: 50px;
+  // background:#1890ff;
+  background: white;
   color:white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  text-align: right;
   .avator {
     cursor: pointer;
     // background-color: #87d068;

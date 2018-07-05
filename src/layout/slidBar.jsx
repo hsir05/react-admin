@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import { Layout, Menu, Icon } from 'antd'
 const { Sider } = Layout
-
+import './slidBar.scss'
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
@@ -16,7 +16,8 @@ class SlideBar extends React.Component {
         children: [
           {key:'1', url:'/', menu:'home', children: []},
           {key:'2', url:'/about', menu:'about', children: []},
-          {key: '3', url: 'form', menu:'form', children: []}
+          {key: '3', url: '/form', menu:'form', children: []},
+          {key: '4', url: '/echarts', menu:'echarts', children: []}
         ]},
         {key:'sub2', icon: 'setting', menu: '设置',
         children: [
@@ -47,13 +48,15 @@ class SlideBar extends React.Component {
       })
     )
     return (
-      <Sider style={{background:'white', borderRight:'1px solid #e5e5e5'}}>
+      <Sider style={{background:'#001529', borderRight:'1px solid #e5e5e5'}}>
+        <div className='top-title'>后台管理 </div>
         <Menu
           onClick={this.handleClick}
           style={{ width: '100%', border: '0' }}
           defaultSelectedKeys={['1']}
           defaultOpenKeys={['0']}
           mode="inline"
+          theme="dark"
         >
           {menuList}
         </Menu>

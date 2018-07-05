@@ -43,7 +43,9 @@ class RegistrationForm extends React.Component {
       }
     }
   }
-
+  componentDidMount () {
+    console.log(this.props);
+  }
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFieldsAndScroll((err, values) => {
