@@ -1,0 +1,10 @@
+.bread-crumb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 15px;
+  .bread-item{
+    margin:15px;
+    font-size: 12px;
+  }
+}

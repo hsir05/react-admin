@@ -23,8 +23,8 @@ class LayOuts extends Component {
         <Layout style={{height:'100%'}}>
           <SlideBar style={{width:'100%'}} />
           <Layout>
-            <HeadBar />
-            <Content style={{background:'#f0f2f5', paddingLeft:'10px', paddingRight:'10px'}}>
+            <HeadBar  />
+            <Content style={{background:'white', paddingLeft:'10px', paddingRight:'10px'}}>
               {this.props.children}
               {/* <Footer style={{background:'#e9e9e9'}}>Footer</Footer> */}
 

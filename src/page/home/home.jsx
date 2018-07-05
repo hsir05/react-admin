@@ -84,7 +84,7 @@ class WropSearch extends React.Component {
     const { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched } = this.props.form;
     const searchError = isFieldTouched('search') && getFieldError('search');
     return (
-       <Form layout="inline" onSubmit={this.handleSubmit} style={{textAlign:'right', marginBottom:'10px'}}>
+       <Form layout="inline" onSubmit={this.handleSubmit} className='search'>
          <FormItem validateStatus={searchError ? 'error' : ''} help={searchError || ''} >
            {getFieldDecorator('search', {
              rules: [{ required: false, message: 'Please input your username!' }],
@@ -121,7 +121,7 @@ class Home extends React.Component {
     return (
       <section>
         <BreadCrumb   {...this.state.data} />
-        <div style={{background:'white', padding:'15px'}}>
+        <div style={{background:'white', padding:'15px', paddingTop:'0'}}>
           <Search />
           <Table rowSelection={rowSelection} columns={columns} dataSource={data} />
         </div>

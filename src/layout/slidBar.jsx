@@ -48,7 +48,7 @@ class SlideBar extends React.Component {
       })
     )
     return (
-      <Sider style={{background:'#001529', borderRight:'1px solid #e5e5e5'}}>
+      <Sider style={{background:'white', borderRight:'1px solid #e5e5e5'}}>
         <div className='top-title'>后台管理 </div>
         <Menu
           onClick={this.handleClick}
@@ -56,7 +56,7 @@ class SlideBar extends React.Component {
           defaultSelectedKeys={['1']}
           defaultOpenKeys={['0']}
           mode="inline"
-          theme="dark"
+  
         >
           {menuList}
         </Menu>

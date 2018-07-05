@@ -18,27 +18,12 @@ h3{
   margin: 10px;
   text-align: center;
 }
-.home-1{
-  flex-direction: row;
+.ant-table-thead > tr > th{
+  background: white;
 }
-.home-2{
-  flex-direction:row-reverse;
-}
-.home-3{
-  flex-direction:column;
-}
-.home-4{
-  flex-direction:column-reverse;
-}
-.home-5{
-  flex-wrap: nowrap;
-}
-.home-6{
-  flex-wrap:wrap;
-}
-.home-7{
-  flex-wrap:wrap-reverse;
-}
-.home-8{
-  flex-flow:row nowrap;
+.search{
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 2px;
 }
